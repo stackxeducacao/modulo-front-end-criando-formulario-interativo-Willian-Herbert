@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Formulário Interativo</title>
+    </head>
+    <body>
+        <main>
+            <h1>Formulário Interativo</h1>
+
+
+            <!-- Abertura do formulário -->
+            <form>
+
+                <!-- Todos os inputs possuem label para redirecionar o usuário ao campo a ser preenchido -->
+                <!-- Os inputs de nome, email e idade são obrigatórios para validação, demais informações são opcionais -->
+                <!-- Seção de entrada do nome, que utiliza um input de texto -->
+                <label for="nome">Nome:</label><br />
+                <input
+                    class="input-text"
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                />
+
+                <br />
+
+                <!-- Seção de entrada do email, com o input de email -->
+                <label for="email">E-mail:</label><br />
+                <input
+                    class="input-text"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                />
+
+                <br />
+
+                <!-- Seção de entrada da idade, utilizando o input de number para inserir a idade -->
+                <label for="idade">Idade:</label><br />
+                <input
+                    class="input-text"
+                    type="number"
+                    name="idade"
+                    id="idade"
+                    required
+                />
+
+                <br />
+
+                <!-- Seção de entrada do sexo, que utiliza o input radio para escolher apenas uma opção -->
+                <label for="sexo">Sexo:</label><br />
+                <input type="radio" name="sexo" /> Masculino <br />
+                <input type="radio" name="sexo" /> Feminino <br />
+                <input type="radio" name="sexo" /> Prefiro não responder
+
+                <br />
+
+                <!-- Seção dos conhecimentos, utilizando o checkbox para marcar várias opções ao mesmo tempo -->
+                <label for="conhecimentos"
+                    >Conhecimentos:</label
+                ><br />
+                <div>
+                    <input type="checkbox" name="conhecimentos" /> JavaScript
+                    <br />
+                    <input type="checkbox" name="conhecimentos" /> TypeScript
+                    <br />
+                    <input type="checkbox" name="conhecimentos" /> Python <br />
+                    <input type="checkbox" name="conhecimentos" /> C# <br />
+                    <input type="checkbox" name="conhecimentos" /> Java <br />
+                    <input type="checkbox" name="conhecimentos" /> Dart <br />
+                    <input type="checkbox" name="conhecimentos" /> PHP
+                </div>
+
+                <!-- Seção de mensagem, com o textarea para permitir mais texto e ficar visualmente mais agradável para o usuário digitar um mensagem -->
+                <label for="mensagem">Deixe uma mensagem:</label><br />
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    cols="30"
+                ></textarea>
+
+                <br />
+
+                <!-- Botão de submit do formulário -->
+                <input id="submit" type="submit" value="Enviar" />
+            </form>
+        </main>
+    </body>
+</html>

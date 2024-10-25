@@ -1,0 +1,69 @@
+/* Removido todos os paddings e margins para ajuste manual posterior */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Ajustes da página, fonte e cor de fundo */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, rgb(21, 1, 123), rgb(9, 0, 55));
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+/* Estilos do formulário e inputs do mesmo */
+form {
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.400);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+input {
+    margin: 0 0 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.input-text {
+    width: 95%;
+    border-radius: 10px;
+}
+
+textarea {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* Div que aplica duas colunas a seção de conhecimentos */
+div {
+    columns: 2;
+    column-fill: balance;
+}
+
+/* Estilização do botão de enviar no final do formulário */
+#submit {
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: color 0.3s, background 0.3s;
+}
+
+#submit:hover {
+    background-color: black;
+    color: white;
+}
